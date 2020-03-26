@@ -1,0 +1,27 @@
+{
+  "repo": {
+    "name": "UTM Repository",
+    "identifier": "com.osy86.repos.UTM"
+  },
+  "apps": [
+    {
+      "name": "UTM",
+      "bundleIdentifier": "com.osy86.UTM",
+      "githubOwner": "utmapp",
+      "githubRepository": "UTM",
+      "developerName": "osy",
+      "subtitle": "Virtual machines for iOS",
+      "localizedDescription": "UTM is a full featured virtual machine host for iOS. In short, it allows you to run Windows, Android, and more on your iPhone and iPad. More information at https://getutm.app/\n\nFeatures:\n\n• Emulate any Processor\n30+ processors supported by qemu including x86_64, ARM64, and RISC-V\n• Run any Operating System\nWindows, Linux, and more natively and securely on iOS within an App\n• Fast Emulation\nPara-virtualization with SPICE and JIT compilation with TCG\n• High Compatibility\niOS 11+ supported. Works on iPhone and iPad. No jailbreak needed\n• Free and Open Source\nUTM and its dependencies are all free and open source\n• Easy to Use\nConfigure and customize your VM in a native UI",
+      "iconURL": "https://alt.getutm.app/icon.png",
+      "tintColor": "1a2cc2",
+      "screenshotURLs": [
+        "https://alt.getutm.app/screen0.png",
+        "https://alt.getutm.app/screen1.png",
+        "https://alt.getutm.app/screen2.png",
+        "https://alt.getutm.app/screen3.png",
+        "https://alt.getutm.app/screen4.png",
+        "https://alt.getutm.app/screen5.png"
+      ]
+    }
+  ]
+}

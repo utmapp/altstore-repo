@@ -1,0 +1,30 @@
+name: Generate
+on:
+  push:
+    paths-ignore:
+      - 'LICENSE'
+      - '**.md'
+
+jobs:
+  generate:
+    name: Generate Repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - name: Run altstore-github
+        run: |
+          mkdir repo
+          npx altstore-github --config config.json > repo/index.html
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./repo
+          publish_branch: master
+          keep_files: true
+          commit_message: 'Update repository'
