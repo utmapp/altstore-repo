@@ -1,12 +1,12 @@
 {
   "repo": {
     "name": "UTM Repository",
-    "identifier": "com.osy86.repos.UTM"
+    "identifier": "com.utmapp.repos.UTM"
   },
   "apps": [
     {
       "name": "UTM",
-      "bundleIdentifier": "com.osy86.UTM",
+      "bundleIdentifier": "com.utmapp.UTM",
       "githubOwner": "utmapp",
       "githubRepository": "UTM",
       "skipPrerelease": true,
@@ -26,7 +26,7 @@
     },
     {
       "name": "UTM",
-      "bundleIdentifier": "com.osy86.UTM.Beta",
+      "bundleIdentifier": "com.utmapp.UTM.Beta",
       "githubOwner": "utmapp",
       "githubRepository": "UTM",
       "beta": true,
