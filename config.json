@@ -1,7 +1,13 @@
 {
   "repo": {
     "name": "UTM Repository",
-    "identifier": "com.utmapp.repos.UTM"
+    "identifier": "com.utmapp.repos.UTM",
+    "subtitle": "Virtual machines for iOS",
+    "website": "https://getutm.app",
+    "tintColor": "#1a2cc2",
+    "featuredApps": [
+        "com.utmapp.UTM"
+    ]
   },
   "apps": [
     {
@@ -13,9 +19,66 @@
       "skipPrerelease": true,
       "developerName": "osy",
       "subtitle": "Virtual machines for iOS (with JIT support)",
-      "localizedDescription": "UTM is a full featured virtual machine host for iOS. In short, it allows you to run Windows, Android, and more on your iPhone and iPad.\nThis version requires using AltJIT or iOS < 14.0 or iOS 14.2-14.4 (A14+ devices only). Install UTM SE for slower emulation without JIT.\n\n\nMore information at https://getutm.app/\n\nFeatures:\n\n• Emulate any Processor\n30+ processors supported by qemu including x86_64, ARM64, and RISC-V\n• Run any Operating System\nWindows, Linux, and more natively and securely on iOS within an App\n• Fast Emulation\nPara-virtualization with SPICE and JIT compilation with TCG\n• High Compatibility\niOS 11+ supported. Works on iPhone and iPad. No jailbreak needed\n• Free and Open Source\nUTM and its dependencies are all free and open source\n• Easy to Use\nConfigure and customize your VM in a native UI\n\n\nNote: Screenshots are from the updated interface only available on iOS 14.",
+      "localizedDescription": "UTM is a full featured virtual machine host for iOS. In short, it allows you to run Windows, Android, and more on your iPhone and iPad.\nThis version requires using AltJIT. Install UTM SE for slower emulation without JIT.\n\n\nMore information at https://getutm.app/\n\nFeatures:\n\n• Emulate any Processor\n30+ processors supported by qemu including x86_64, ARM64, and RISC-V\n• Run any Operating System\nWindows, Linux, and more natively and securely on iOS within an App\n• Fast Emulation\nPara-virtualization with SPICE and JIT compilation with TCG\n• High Compatibility\niOS 14+ supported. Works on iPhone and iPad. No jailbreak needed\n• Free and Open Source\nUTM and its dependencies are all free and open source\n• Easy to Use\nConfigure and customize your VM in a native UI",
       "iconURL": "https://alt.getutm.app/icon.png",
-      "tintColor": "1a2cc2",
+      "tintColor": "#1a2cc2",
+      "minOSVersion": "14.0",
+      "appPermissions": {
+        "entitlements": [
+          {
+            "name": "get-task-allow"
+          },
+          {
+            "name": "com.apple.developer.kernel.increased-memory-limit"
+          },
+          {
+            "name": "com.apple.developer.kernel.extended-virtual-addressing"
+          },
+          {
+            "name": "dynamic-codesigning"
+          },
+          {
+            "name": "com.apple.private.iokit.IOServiceSetAuthorizationID"
+          },
+          {
+            "name": "com.apple.security.exception.iokit-user-client-class"
+          },
+          {
+            "name": "com.apple.system.diagnostics.iokit-properties"
+          },
+          {
+            "name": "com.apple.vm.device-access"
+          },
+          {
+            "name": "com.apple.private.hypervisor"
+          },
+          {
+            "name": "com.apple.private.memorystatus"
+          }
+        ],
+        "privacy": [
+          {
+            "name": "LocalNetwork",
+            "usageDescription": "The virtual machine may access the local network. UTM also uses the local network to communicate with AltServer."
+          },
+          {
+            "name": "LocationAlwaysAndWhenInUse",
+            "usageDescription": "UTM requests location data periodically to ensure the system keeps the background process active. Location data will never leave the device."
+          },
+          {
+            "name": "LocationAlways",
+            "usageDescription": "UTM requests location data periodically to ensure the system keeps the background process active. Location data will never leave the device."
+          },
+          {
+            "name": "LocationWhenInUse",
+            "usageDescription": "UTM requests location data periodically to ensure the system keeps the background process active. Location data will never leave the device."
+          },
+          {
+            "name": "Microphone",
+            "usageDescription": "Permission is required for any virtual machine to record from the microphone."
+          }
+        ]
+      },
       "screenshotURLs": [
         "https://alt.getutm.app/screen0.png",
         "https://alt.getutm.app/screen1.png",
@@ -29,15 +92,48 @@
     {
       "name": "UTM SE",
       "bundleIdentifier": "com.utmapp.UTM-SE",
-      "filename": "UTM.SE.ipa",
+      "filename": "UTM-SE.ipa",
       "githubOwner": "utmapp",
       "githubRepository": "UTM",
       "skipPrerelease": true,
       "developerName": "osy",
       "subtitle": "Virtual machines for iOS (without JIT support)",
-      "localizedDescription": "UTM is a full featured virtual machine host for iOS. In short, it allows you to run Windows, Android, and more on your iPhone and iPad.\nThis version runs on all > iOS 11 devices but lacks JIT support and is slower than regular UTM.\n\n\nMore information at https://getutm.app/\n\nFeatures:\n\n• Emulate any Processor\n30+ processors supported by qemu including x86_64, ARM64, and RISC-V\n• Run any Operating System\nWindows, Linux, and more natively and securely on iOS within an App\n• Fast Emulation\nPara-virtualization with SPICE and JIT compilation with TCG\n• High Compatibility\niOS 11+ supported. Works on iPhone and iPad. No jailbreak needed\n• Free and Open Source\nUTM and its dependencies are all free and open source\n• Easy to Use\nConfigure and customize your VM in a native UI\n\n\nNote: Screenshots are from the updated interface only available on iOS 14.",
+      "localizedDescription": "UTM is a full featured virtual machine host for iOS. In short, it allows you to run Windows, Android, and more on your iPhone and iPad.\nThis version runs on all iOS 14+ devices but lacks JIT support and is slower than regular UTM.\n\n\nMore information at https://getutm.app/\n\nFeatures:\n\n• Emulate any Processor\n30+ processors supported by qemu including x86_64, ARM64, and RISC-V\n• Run any Operating System\nWindows, Linux, and more natively and securely on iOS within an App\n• Fast Emulation\nPara-virtualization with SPICE and JIT compilation with TCG\n• High Compatibility\niOS 14+ supported. Works on iPhone and iPad. No jailbreak needed\n• Free and Open Source\nUTM and its dependencies are all free and open source\n• Easy to Use\nConfigure and customize your VM in a native UI",
       "iconURL": "https://alt.getutm.app/icon.png",
-      "tintColor": "1a2cc2",
+      "tintColor": "#1a2cc2",
+      "minOSVersion": "14.0",
+      "appPermissions": {
+        "entitlements": [
+          {
+            "name": "com.apple.developer.kernel.increased-memory-limit"
+          },
+          {
+            "name": "com.apple.developer.kernel.extended-virtual-addressing"
+          }
+        ],
+        "privacy": [
+          {
+            "name": "LocalNetwork",
+            "usageDescription": "The virtual machine may access the local network. UTM also uses the local network to communicate with AltServer."
+          },
+          {
+            "name": "LocationAlwaysAndWhenInUse",
+            "usageDescription": "UTM requests location data periodically to ensure the system keeps the background process active. Location data will never leave the device."
+          },
+          {
+            "name": "LocationAlways",
+            "usageDescription": "UTM requests location data periodically to ensure the system keeps the background process active. Location data will never leave the device."
+          },
+          {
+            "name": "LocationWhenInUse",
+            "usageDescription": "UTM requests location data periodically to ensure the system keeps the background process active. Location data will never leave the device."
+          },
+          {
+            "name": "Microphone",
+            "usageDescription": "Permission is required for any virtual machine to record from the microphone."
+          }
+        ]
+      },
       "screenshotURLs": [
         "https://alt.getutm.app/screen0.png",
         "https://alt.getutm.app/screen1.png",
